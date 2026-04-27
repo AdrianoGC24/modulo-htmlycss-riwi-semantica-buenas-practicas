@@ -1,5 +1,44 @@
 # 🚀 Nombre del Proyecto
 
+Breve descripción del proyecto.  
+Explica en 1 o 2 líneas qué hace y para qué sirve.
+
+---
+
+## 📌 Descripción
+
+Explicación un poco más detallada:
+- ¿Qué problema resuelve?
+- ¿Para quién es?
+- ¿Qué lo hace especial?
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- HTML
+- CSS
+- JavaScript
+- (o cualquier otra: React, Node, etc.)
+
+---
+
+## ⚙️ Funcionalidades
+
+- Funcionalidad 1
+- Funcionalidad 2
+- Funcionalidad 3
+
+---
+
+## 📂 Estructura del proyecto
+
+/proyecto
+│── index.html
+│── style.css
+│── script.js
+│── assets/
+
 ---
 
 ## 🚀 Instalación

@@ -1,0 +1,153 @@
+/* ============================= */
+/* 🔹 VARIABLES GLOBALES */
+/* ============================= */
+
+:root {
+    /* Colores principales */
+    --color-primary: #b91c1c;
+    --color-secondary: #fecaca;
+    --color-accent: #4ade80;
+
+    /* Colores neutros */
+    --color-bg: #1a1a1a;
+    --color-text: #ffffff;
+
+    /* Tipografía */
+    --font-main: 'Arial', sans-serif;
+
+    /* Espaciados */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+
+    /* Bordes */
+    --radius: 0.5rem;
+}
+
+
+/* ============================= */
+/* 🔹 RESET (evita estilos raros del navegador) */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ============================= */
+/* 🔹 ESTILOS BASE */
+/* ============================= */
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+
+/* ============================= */
+/* 🔹 LAYOUT (estructura) */
+/* ============================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* centrar */
+}
+
+
+/* ============================= */
+/* 🔹 FLEXBOX (alineación simple) */
+/* ============================= */
+
+.flex {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ============================= */
+/* 🔹 GRID (layouts más complejos) */
+/* ============================= */
+
+.grid {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* ============================= */
+/* 🔹 COMPONENTES */
+/* ============================= */
+
+/* Botones */
+.btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn:hover {
+    background-color: #991b1b;
+}
+
+
+/* Cards */
+.card {
+    background-color: var(--color-secondary);
+    padding: var(--spacing-md);
+    border-radius: var(--radius);
+}
+
+
+/* ============================= */
+/* 🔹 UTILIDADES */
+/* ============================= */
+
+/* Ocultar elemento */
+.hidden {
+    display: none;
+}
+
+/* Texto centrado */
+.text-center {
+    text-align: center;
+}
+
+
+/* ============================= */
+/* 🔹 RESPONSIVE (MEDIA QUERIES) */
+/* ============================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
